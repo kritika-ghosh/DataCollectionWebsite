@@ -715,6 +715,3 @@ with gr.Blocks() as demo:
         fn=save_all_data_to_gsheet, # Changed to use the Google Sheet saving function
         outputs=final_status
     )
-
-if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=10000)
