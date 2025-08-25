@@ -111,14 +111,16 @@ questions = [
     "Do you feel like you're just going through the motions, not really enjoying hostel or college life?",
     "Do you avoid people or group work because you just don’t feel like talking?",
     "Do you feel proud of the progress you're making in your academics or personal goals?",
-    "Do you feel that your efforts are leading to meaningful outcomes or recognition?"
+    "Do you feel that your efforts are leading to meaningful outcomes or recognition?",
+    "Overall, based on your definition of burnout, how would you rate your level of burnout?"
 ]
 options = [
     ["Never", "Rarely", "Sometimes", "Often", "Always"],
     ["Never", "Rarely", "Sometimes", "Often", "Always"],
     ["Never", "Rarely", "Sometimes", "Often", "Always"],
     ["Never", "Rarely", "Sometimes", "Often", "Always"],
-    ["Never", "Rarely", "Sometimes", "Often", "Always"]
+    ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    ["I enjoy my work. I have no symptoms of burnout", "Occasionally I am under stress, and I don’t always have as much energy as I once did, but I don’t feel burned out", "I am definitely burning out and have one or more symptoms of burnout, such as physical and emotional exhaustion", "The symptoms of burnout that I’m experiencing won’t go away. I think about frustration at work a lot", "I feel completely burned out and often wonder if I can go on. I am at the point where I may need some changes or may need to seek some sort of help"]
 ]
 
 # --- Complete Emotion Detector Class (with custom features) ---
@@ -524,7 +526,7 @@ def save_to_google_sheet(questionnaire_answers, face_stats, emotion_stats, voice
     # --- IMPORTANT: Configure these two variables ---
     # We now read credentials from a local file, which is fine for local dev
     SERVICE_ACCOUNT_FILE = 'service_account_key.json'
-    SPREADSHEET_NAME = 'AI Emotion Analysis Data'
+    SPREADSHEET_NAME = 'data'
     # -----------------------------------------------
 
     scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive']
@@ -719,9 +721,3 @@ with gr.Blocks() as demo:
 if __name__ == "__main__":
     demo.launch()
     #server_name="0.0.0.0", server_port=10000
-
-
-
-
-
-
