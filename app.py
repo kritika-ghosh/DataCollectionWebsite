@@ -107,19 +107,20 @@ RIGHT_EYE = [33, 160, 158, 133, 153, 144]
 INNER_MOUTH = [78, 191, 80, 81, 82, 13, 312, 311, 310, 415, 95, 88, 178, 87, 14, 317, 402, 318, 324]
 
 questions = [
-    "How are you feeling today?",
-    "How would you rate your current focus level?",
-    "How tired do you feel right now?",
-    "How stressed do you feel?",
-    "How engaged are you in your current activity?"
+    "Do you often feel exhausted or stressed after classes and hostel work, even with enough sleep?",
+    "Do you feel like you're just going through the motions, not really enjoying hostel or college life?",
+    "Do you avoid people or group work because you just don’t feel like talking?",
+    "Do you feel proud of the progress you're making in your academics or personal goals?",
+    "Do you feel that your efforts are leading to meaningful outcomes or recognition?",
+    "scale question"
 ]
-
 options = [
-    ["Good", "Neutral", "Bad"],
-    ["Focused", "Somewhat focused", "Distracted"],
-    ["Not tired", "Somewhat tired", "Very tired"],
-    ["Not stressed", "Somewhat stressed", "Very stressed"],
-    ["Very engaged", "Moderately engaged", "Not engaged"]
+    ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    ["Never", "Rarely", "Sometimes", "Often", "Always"]
 ]
 
 # --- Complete Emotion Detector Class (with custom features) ---
@@ -720,6 +721,7 @@ with gr.Blocks() as demo:
 if __name__ == "__main__":
     demo.launch()
     #server_name="0.0.0.0", server_port=10000
+
 
 
 
