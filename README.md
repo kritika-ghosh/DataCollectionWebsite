@@ -38,7 +38,13 @@ We need to make sure we're all using the same setup.
 *   Open your `project_exhibition` folder on your Desktop.
 *   Click in the top address bar of the folder, **type `cmd`**, and press **Enter**. This will open a Command Prompt window already pointed to the correct folder.
 
-*(Alternatively, you can open the Start Menu, type `cmd` to open Command Prompt, and then use the `cd` command shown in the box below.)*
+### C) Navigate Using Command Prompt (The Manual Way)
+If you opened Command Prompt another way, use **one of these commands** to get to the right spot:
+
+**If you created the folder on your Desktop:**
+```cmd
+cd /d Desktop\project_exhibition
+```
 
 ### C) Create and Activate a Virtual Environment
 With the Command Prompt open, run the following commands, one by one:
