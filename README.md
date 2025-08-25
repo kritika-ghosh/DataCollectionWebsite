@@ -11,9 +11,7 @@ First, let's keep everything organized.
 ## Step 2: Download the Necessary Files
 
 You need to download these three files into your new folder.
-
-1.  Go to the GitHub repo: **[Insert GitHub Repo Link Here]**
-2.  Download these three files directly into the `project_exhibition` folder you just made:
+Download these three files directly into the `project_exhibition` folder you just made:
     *   `service_account_keys.json`
     *   `app.py`
     *   `requirements.txt`
